@@ -1,0 +1,15 @@
+AllCops:
+  NewCops: enable
+
+Layout/LineLength:
+  Max: 100 # Set line width to more sensible default
+
+Metrics/BlockLength:
+  Exclude:
+    - spec/**/*
+
+Style/StringLiterals:
+  EnforcedStyle: double_quotes # prefer double quotes
+
+Style/FrozenStringLiteralComment:
+  EnforcedStyle: always_true # immutable code where possible
