@@ -1,23 +1,23 @@
 # frozen_string_literal: true
 
-require_relative "lib/simple_action/version"
+require_relative "lib/simpler_command/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "simple_action"
-  spec.version       = SimpleAction::VERSION
+  spec.name          = "simpler_command"
+  spec.version       = SimplerCommand::VERSION
   spec.authors       = ["Ben Morrall"]
   spec.email         = ["bemo56@hotmail.com"]
 
-  spec.summary       = "Provides a simple structure for Actions (Service Objects)"
-  spec.homepage      = "https://github.com/bmorrall/simple_action"
+  spec.summary       = "Yet another simple and standardized way to build and use Commands (aka Service Objects)"
+  spec.homepage      = "https://github.com/bmorrall/simpler_command"
   spec.license       = "MIT"
   spec.required_ruby_version = Gem::Requirement.new(">= 2.3.0")
 
   spec.metadata["allowed_push_host"] = "TODO: Set to 'http://mygemserver.com'"
 
   spec.metadata["homepage_uri"] = spec.homepage
-  spec.metadata["source_code_uri"] = "https://github.com/bmorrall/simple_action"
-  spec.metadata["changelog_uri"] = "https://github.com/bmorrall/simple_action/blob/master/CHANGELOG.md"
+  spec.metadata["source_code_uri"] = "https://github.com/bmorrall/simpler_command"
+  spec.metadata["changelog_uri"] = "https://github.com/bmorrall/simpler_command/blob/master/CHANGELOG.md"
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.

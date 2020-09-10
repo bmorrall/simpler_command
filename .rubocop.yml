@@ -11,5 +11,8 @@ Metrics/BlockLength:
 Style/StringLiterals:
   EnforcedStyle: double_quotes # prefer double quotes
 
+Style/FormatStringToken:
+  Enabled: false
+
 Style/FrozenStringLiteralComment:
   EnforcedStyle: always_true # immutable code where possible
