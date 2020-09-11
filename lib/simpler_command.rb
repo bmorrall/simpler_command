@@ -4,6 +4,8 @@ require "simpler_command/version"
 require "simpler_command/string_utils"
 require "simpler_command/errors"
 
+require "simpler_command/railtie" if defined? Rails::Railtie
+
 # Provides a simple structure for Commands (Services).
 #
 # Prepend SimplerCommand to your Command (Service) objects and implemente a call methods.

@@ -4,6 +4,8 @@
 
 ### Added
 
+- Added simpler_command generator for Rails Applications
+
 ### Changed
 
 ### Removed

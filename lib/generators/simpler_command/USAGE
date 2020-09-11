@@ -1,0 +1,10 @@
+Description:
+    Generates a Command (aka Service Object) using SimplerCommand.
+
+    Provide additional command arguments for parameters used by the Command
+
+Example:
+    rails generate simpler_command PublishArticle article
+
+    This will create:
+        app/commands/publish_article.rb

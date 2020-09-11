@@ -67,6 +67,16 @@ class Albums::UpdateDescriptionController < ApplicationController
 end
 ```
 
+### Rails generator
+
+For any Rails application, the easiest way to get started is by using the simpler_command generator.
+
+```bash
+bundle exec rails generator simpler_command AddSubscriptionToUser user subscription
+```
+
+This will generate the basic structure of your command inside the `app/commands` directory.
+
 ### The result object
 
 Commands are Service Objects, built with the intent of following the principles of Command-query separation: every method should either be a command that performs an action, or a query that returns data to the caller, but not both.

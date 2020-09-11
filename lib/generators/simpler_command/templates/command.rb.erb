@@ -1,0 +1,41 @@
+# <%= class_name %> command.
+#
+# === Examples
+#
+#   <%= class_name %>.<%= method_call "call", argument_parameters %> # => response object with success? and result, or failure?
+#   <%= class_name %>.<%= method_call "call!", argument_parameters %> # => result, or thrown SimpleCommand::Failure
+class <%= class_name %>
+  # put SimplerCommand before the class' ancestors chain
+  prepend SimplerCommand
+
+  # Uncomment for Rails I18n Error Translations
+  # include ActiveModel::Validations
+
+  def <%= method_call "initialize", argument_parameters %>
+  <%- argument_parameters.each do |arg| -%>
+    @<%= arg %> = <%= arg %>
+  <%- end -%>
+  end
+
+  def call
+    # TODO: Implement <%= class_name %> command<%- if arguments.any? -%>, e.g. <% end %>
+    <%- if arguments.any? -%>
+    # unless [<%= argument_parameters.join(", ") %>].all?(&:valid?)
+    <%- argument_parameters.each do |arg| -%>
+    #   errors.merge! <%= arg %>.errors
+    <%- end -%>
+    #   return
+    # end
+    #
+    # # do something...
+    #
+    # nil
+    <%- end -%>
+  end
+  <%- if arguments.any? -%>
+
+  private
+
+  attr_reader <%= argument_parameters.map { |arg| ":#{arg}" }.join(", ") %>
+  <%- end -%>
+end
