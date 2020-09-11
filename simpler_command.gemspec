@@ -8,7 +8,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Ben Morrall"]
   spec.email         = ["bemo56@hotmail.com"]
 
-  spec.summary       = "Yet another simple and standardized way to build and use Commands (aka Service Objects)"
+  spec.summary       = "Yet another simple and standardized way to build and use Commands" \
+                       " (aka Service Objects)"
   spec.homepage      = "https://github.com/bmorrall/simpler_command"
   spec.license       = "MIT"
   spec.required_ruby_version = Gem::Requirement.new(">= 2.3.0")
