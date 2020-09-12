@@ -19,6 +19,8 @@ class SimplerCommandGenerator < Rails::Generators::NamedBase
     template "command.rb.erb", "app/commands/#{file_name}.rb"
   end
 
+  hook_for :test_framework
+
   private
 
   def argument_parameters

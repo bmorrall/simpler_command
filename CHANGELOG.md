@@ -5,6 +5,7 @@
 ### Added
 
 - Added simpler_command generator for Rails Applications
+- Added rspec:simpler_command generator for testing SimplerCommand in Rails
 
 ### Changed
 

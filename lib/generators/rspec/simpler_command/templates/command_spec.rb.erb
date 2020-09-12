@@ -1,0 +1,36 @@
+require "rails_helper"
+
+RSpec.describe <%= class_name %> do
+  describe ".call" do
+    subject(:response) { described_class.<%= method_call("call", argument_parameters) %> }
+
+    context "with valid parameters" do
+      # TODO: setup valid parameters
+      <%- argument_parameters.each do |arg| -%>
+      let(:<%= arg %>) { instance_double(<%= arg.classify %>) }
+      <%- end -%>
+
+      it { is_expected.to be_success }
+      it { expect(response.result).to be_nil }
+      <%- argument_parameters.each do |arg| -%>
+
+      it "interacts with <%= arg %>" do
+        pending "add expectations for interacting with <%= arg %>"
+
+        response
+
+        expect(<%= arg %>).to have_received(:example)
+      end
+      <%- end -%>
+    end
+
+    context "with invalid parameters" do
+      # TODO: setup invalid parameters
+      <%- argument_parameters.each do |arg| -%>
+      let(:<%= arg %>) { instance_double(<%= arg.classify %>) }
+      <%- end -%>
+
+      it { is_expected.to be_failure }
+    end
+  end
+end

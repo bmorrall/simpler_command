@@ -1,11 +1,10 @@
 Description:
-    Generates a Command (aka Service Object) using SimplerCommand.
+    Generates a spec for a Command (aka Service Object).
 
     Provide additional command arguments for parameters used by the Command
 
 Example:
-    rails generate simpler_command PublishArticle article
+    rails generate rspec:simpler_command PublishArticle article
 
     This will create:
-        app/commands/publish_article.rb
         spec/commands/publish_article_spec.rb
